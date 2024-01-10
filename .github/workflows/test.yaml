@@ -9,7 +9,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: 'zulu' # See 'Supported distributions' for available options
-          java-version: '18'
+          java-version: '11'
       - uses: Xotabu4/selenoid-github-action@v2
 
       - run: npm install -g bats
