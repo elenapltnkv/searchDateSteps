@@ -1,6 +1,6 @@
 name: test
 
-on: [push]
+on: [ push ]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
@@ -10,6 +10,7 @@ jobs:
         with:
           distribution: 'zulu' # See 'Supported distributions' for available options
           java-version: '18'
+      - uses: Xotabu4/selenoid-github-action@v2
       - run: java HelloWorldApp.java
       - run: npm install -g bats
-      - run: ./gradlew clean test
+      - run: ./gradlew clean test -Dselenide.remote=http://localhost:4444/wd/hub
