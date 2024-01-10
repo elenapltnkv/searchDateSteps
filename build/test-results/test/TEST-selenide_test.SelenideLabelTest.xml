@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="selenide_test.SelenideLabelTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-10T05:42:33" hostname="user" time="6.873">
+  <properties/>
+  <testcase name="Проверка номера issue" classname="selenide_test.SelenideLabelTest" time="6.873"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
